@@ -9,8 +9,94 @@
   <name>Hotel-Management-SystemCompositeExporter</name>
   <description>Hotel-Management-SystemCompositeExporter</description>
   <properties>
+    <com.example.endpoint_._GetOneEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetOneEmployeeEP>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
+    <com.example.endpoint_._DeleteEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._DeleteEmployeeEP>
+    <com.example.endpoint_._PaymentUrlEP>capp/EnterpriseServiceBus</com.example.endpoint_._PaymentUrlEP>
+    <com.example.endpoint_._AddEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._AddEmployeeEP>
+    <com.example.endpoint_._GetAllUsersEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetAllUsersEP>
+    <com.example.api_._PaymentsAPI>capp/EnterpriseServiceBus</com.example.api_._PaymentsAPI>
+    <com.example.endpoint_._GetAllEmployeesEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetAllEmployeesEP>
+    <com.example.endpoint_._CalculatePaymentEP>capp/EnterpriseServiceBus</com.example.endpoint_._CalculatePaymentEP>
+    <com.example.endpoint_._UpdateEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._UpdateEmployeeEP>
+    <com.example.api_._TravellersAPI>capp/EnterpriseServiceBus</com.example.api_._TravellersAPI>
+    <com.example.api_._EmployeesAPI>capp/EnterpriseServiceBus</com.example.api_._EmployeesAPI>
+    <com.example.endpoint_._AddUserEP>capp/EnterpriseServiceBus</com.example.endpoint_._AddUserEP>
   </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.example.api</groupId>
+      <artifactId>EmployeesAPI</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.api</groupId>
+      <artifactId>PaymentsAPI</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.api</groupId>
+      <artifactId>TravellersAPI</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>AddEmployeeEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>AddUserEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>CalculatePaymentEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>DeleteEmployeeEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>GetAllEmployeesEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>GetAllUsersEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>GetOneEmployeeEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>PaymentUrlEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>UpdateEmployeeEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <releases>

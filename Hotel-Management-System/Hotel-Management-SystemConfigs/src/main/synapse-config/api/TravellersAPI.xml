@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/travellers" name="TravellersAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST GET" uri-template="/{route}">
+        <inSequence>
+            <log>
+                <property name="message" value="Welcome to Traveller Service"/>
+            </log>
+            <switch source="get-property(&quot;uri.var.route&quot;)">
+                <case regex="getAll">
+                    <send>
+                        <endpoint key="GetAllUsersEP"/>
+                    </send>
+                </case>
+                <case regex="add">
+                    <send>
+                        <endpoint key="AddUserEP"/>
+                    </send>
+                </case>
+                <default/>
+            </switch>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

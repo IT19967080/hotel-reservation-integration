@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/payments" name="PaymentsAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/{route}">
+        <inSequence>
+            <log>
+                <property expression="get-property(&quot;uri.var.route&quot;)" name="Route"/>
+            </log>
+            <switch source="get-property(&quot;uri.var.route&quot;)">
+                <case regex="create_url">
+                    <send>
+                        <endpoint key="PaymentUrlEP"/>
+                    </send>
+                </case>
+                <case regex="calculate">
+                    <send>
+                        <endpoint key="CalculatePaymentEP"/>
+                    </send>
+                </case>
+                <default/>
+            </switch>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

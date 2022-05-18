@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/employees" name="EmployeesAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/getAll">
+        <inSequence>
+            <log>
+                <property name="Message" value="Called"/>
+            </log>
+            <send>
+                <endpoint key="GetAllEmployeesEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/getOne/{id}">
+        <inSequence>
+            <send>
+                <endpoint key="GetOneEmployeeEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/add">
+        <inSequence>
+            <send>
+                <endpoint key="AddEmployeeEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/update/{id}">
+        <inSequence>
+            <send>
+                <endpoint key="UpdatelEmployeeEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="DELETE" uri-template="/delete/{id}">
+        <inSequence>
+            <send>
+                <endpoint key="DeleteEmployeeEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

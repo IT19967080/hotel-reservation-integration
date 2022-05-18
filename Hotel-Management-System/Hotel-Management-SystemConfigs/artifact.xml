@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts/>
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="PaymentUrlEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentUrlEP.xml</file>
+    </artifact>
+    <artifact name="CalculatePaymentEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/CalculatePaymentEP.xml</file>
+    </artifact>
+    <artifact name="PaymentsAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PaymentsAPI.xml</file>
+    </artifact>
+    <artifact name="GetAllEmployeesEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GetAllEmployeesEP.xml</file>
+    </artifact>
+    <artifact name="GetOneEmployeeEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GetOneEmployeeEP.xml</file>
+    </artifact>
+    <artifact name="AddEmployeeEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AddEmployeeEP.xml</file>
+    </artifact>
+    <artifact name="UpdateEmployeeEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/UpdateEmployeeEP.xml</file>
+    </artifact>
+    <artifact name="DeleteEmployeeEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/DeleteEmployeeEP.xml</file>
+    </artifact>
+    <artifact name="EmployeesAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/EmployeesAPI.xml</file>
+    </artifact>
+    <artifact name="GetAllUsersEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GetAllUsersEP.xml</file>
+    </artifact>
+    <artifact name="AddUserEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AddUserEP.xml</file>
+    </artifact>
+    <artifact name="TravellersAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/TravellersAPI.xml</file>
+    </artifact>
+</artifacts>
