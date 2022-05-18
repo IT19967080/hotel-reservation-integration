@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<api context="/reservation" name="addres" xmlns="http://ws.apache.org/ns/synapse">
+<api context="/reservation" name="reservation" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="POST" url-mapping="/addreservation">
         <inSequence>
             <log>
