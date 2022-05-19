@@ -2,9 +2,6 @@
 <api context="/employees" name="EmployeesAPI" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET" uri-template="/getAll">
         <inSequence>
-            <log>
-                <property name="Message" value="Called"/>
-            </log>
             <send>
                 <endpoint key="GetAllEmployeesEP"/>
             </send>
