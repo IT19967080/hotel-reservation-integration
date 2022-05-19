@@ -35,4 +35,20 @@
     <artifact name="TravellersAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/TravellersAPI.xml</file>
     </artifact>
+<artifact name="reservehote-company" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/reservehote-company.xml</file>
+    </artifact>
+    <artifact name="reservation" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/reservation.xml</file>
+    </artifact>
+    <artifact name="addReservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/addReservation.xml</file>
+    </artifact>
+    <artifact name="viewreservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/viewreservation.xml</file>
+    </artifact>
+    <artifact name="getspecificreservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getspecificreservation.xml</file>
+    </artifact>
+
 </artifacts>

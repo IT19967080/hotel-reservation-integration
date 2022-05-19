@@ -9,19 +9,24 @@
   <name>Hotel-Management-SystemCompositeExporter</name>
   <description>Hotel-Management-SystemCompositeExporter</description>
   <properties>
-    <com.example.endpoint_._GetOneEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetOneEmployeeEP>
-    <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
-    <com.example.endpoint_._DeleteEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._DeleteEmployeeEP>
-    <com.example.endpoint_._PaymentUrlEP>capp/EnterpriseServiceBus</com.example.endpoint_._PaymentUrlEP>
-    <com.example.endpoint_._AddEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._AddEmployeeEP>
-    <com.example.endpoint_._GetAllUsersEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetAllUsersEP>
-    <com.example.api_._PaymentsAPI>capp/EnterpriseServiceBus</com.example.api_._PaymentsAPI>
-    <com.example.endpoint_._GetAllEmployeesEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetAllEmployeesEP>
-    <com.example.endpoint_._CalculatePaymentEP>capp/EnterpriseServiceBus</com.example.endpoint_._CalculatePaymentEP>
+    <com.example.api_._reservation>capp/EnterpriseServiceBus</com.example.api_._reservation>
     <com.example.endpoint_._UpdateEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._UpdateEmployeeEP>
-    <com.example.api_._TravellersAPI>capp/EnterpriseServiceBus</com.example.api_._TravellersAPI>
-    <com.example.api_._EmployeesAPI>capp/EnterpriseServiceBus</com.example.api_._EmployeesAPI>
+    <com.example.api_._PaymentsAPI>capp/EnterpriseServiceBus</com.example.api_._PaymentsAPI>
+    <com.example.endpoint_._viewreservation>capp/EnterpriseServiceBus</com.example.endpoint_._viewreservation>
+    <com.example.endpoint_._GetAllEmployeesEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetAllEmployeesEP>
+    <com.example.endpoint_._getspecificreservation>capp/EnterpriseServiceBus</com.example.endpoint_._getspecificreservation>
+    <com.example.endpoint_._GetAllUsersEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetAllUsersEP>
+    <com.example.endpoint_._reservehote-company>capp/EnterpriseServiceBus</com.example.endpoint_._reservehote-company>
+    <com.example.endpoint_._addReservation>capp/EnterpriseServiceBus</com.example.endpoint_._addReservation>
+    <com.example.endpoint_._DeleteEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._DeleteEmployeeEP>
     <com.example.endpoint_._AddUserEP>capp/EnterpriseServiceBus</com.example.endpoint_._AddUserEP>
+    <com.example.endpoint_._AddEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._AddEmployeeEP>
+    <com.example.api_._EmployeesAPI>capp/EnterpriseServiceBus</com.example.api_._EmployeesAPI>
+    <com.example.endpoint_._GetOneEmployeeEP>capp/EnterpriseServiceBus</com.example.endpoint_._GetOneEmployeeEP>
+    <com.example.endpoint_._CalculatePaymentEP>capp/EnterpriseServiceBus</com.example.endpoint_._CalculatePaymentEP>
+    <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
+    <com.example.api_._TravellersAPI>capp/EnterpriseServiceBus</com.example.api_._TravellersAPI>
+    <com.example.endpoint_._PaymentUrlEP>capp/EnterpriseServiceBus</com.example.endpoint_._PaymentUrlEP>
   </properties>
   <dependencies>
     <dependency>
@@ -39,6 +44,12 @@
     <dependency>
       <groupId>com.example.api</groupId>
       <artifactId>TravellersAPI</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.api</groupId>
+      <artifactId>reservation</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -93,6 +104,30 @@
     <dependency>
       <groupId>com.example.endpoint</groupId>
       <artifactId>UpdateEmployeeEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>addReservation</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>getspecificreservation</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>reservehote-company</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>viewreservation</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
