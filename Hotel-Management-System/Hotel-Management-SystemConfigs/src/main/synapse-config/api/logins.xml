@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/logins" name="logins" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/traveller/checkusername/{username}">
+        <inSequence>
+            <log>
+                <property name="message" value="check traveller username"/>
+            </log>
+            <send>
+                <endpoint key="checktravellerusername"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/admin/getusername/{username}">
+        <inSequence>
+            <log>
+                <property name="message" value="get admin username"/>
+            </log>
+            <send>
+                <endpoint key="getadminusername"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/admin/info">
+        <inSequence>
+            <log>
+                <property name="message" value="get admin info"/>
+            </log>
+            <send>
+                <endpoint key="getadmininfo"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/employee/checkusername/{username}">
+        <inSequence>
+            <log>
+                <property name="message" value="check employee username"/>
+            </log>
+            <send>
+                <endpoint key="checkemployeeusername"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="traveller/info/{username}">
+        <inSequence>
+            <log>
+                <property name="message" value="return traveller username"/>
+            </log>
+            <send>
+                <endpoint key="returntravellerinfo"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/employee/info/{username}">
+        <inSequence>
+            <log>
+                <property name="message" value="return employee info"/>
+            </log>
+            <send>
+                <endpoint key="returnemployeeinfo"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

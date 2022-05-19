@@ -42,4 +42,32 @@
         </outSequence>
         <faultSequence/>
     </resource>
+    <resource methods="DELETE" uri-template="/deletereservation/{id}">
+        <inSequence>
+            <log>
+                <property name="message" value="delete a reservation"/>
+            </log>
+            <send>
+                <endpoint key="deleteareservation"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/updatereservation/{id}">
+        <inSequence>
+            <log>
+                <property name="message" value="update a reservation"/>
+            </log>
+            <send>
+                <endpoint key="updateareservation"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
 </api>

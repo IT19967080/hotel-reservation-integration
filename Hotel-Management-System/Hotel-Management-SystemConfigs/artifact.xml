@@ -14,4 +14,40 @@
     <artifact name="getspecificreservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/getspecificreservation.xml</file>
     </artifact>
+    <artifact name="deleteareservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/deleteareservation.xml</file>
+    </artifact>
+    <artifact name="updateareservation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/updateareservation.xml</file>
+    </artifact>
+    <artifact name="checktravellerusername" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/checktravellerusername.xml</file>
+    </artifact>
+    <artifact name="logins" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/logins.xml</file>
+    </artifact>
+    <artifact name="getadminusername" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getadminusername.xml</file>
+    </artifact>
+    <artifact name="getadmininfo" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getadmininfo.xml</file>
+    </artifact>
+    <artifact name="checkemployeeusername" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/checkemployeeusername.xml</file>
+    </artifact>
+    <artifact name="returntravellerinfo" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/returntravellerinfo.xml</file>
+    </artifact>
+    <artifact name="returnemployeeinfo" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/returnemployeeinfo.xml</file>
+    </artifact>
+    <artifact name="registertraveller" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/registertraveller.xml</file>
+    </artifact>
+    <artifact name="register" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/register.xml</file>
+    </artifact>
+    <artifact name="Sequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Sequence.xml</file>
+    </artifact>
 </artifacts>
