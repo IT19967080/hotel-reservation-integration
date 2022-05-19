@@ -28,6 +28,20 @@
         </outSequence>
         <faultSequence/>
     </resource>
+    <resource methods="GET" url-mapping="/getreservations/{username}">
+        <inSequence>
+            <log>
+                <property name="message" value="get reservations by user"/>
+            </log>
+            <send>
+                <endpoint key="GetReservationsByUser"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
     <resource methods="GET" uri-template="/getreservation/{id}">
         <inSequence>
             <log>
