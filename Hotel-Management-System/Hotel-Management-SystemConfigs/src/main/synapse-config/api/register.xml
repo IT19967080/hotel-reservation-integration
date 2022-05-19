@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/registrationtravel" name="register" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/traveller/register">
+        <inSequence>
+            <log>
+                <property name="message" value="register traveller"/>
+            </log>
+            <send>
+                <endpoint key="registertraveller"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
