@@ -28,7 +28,7 @@
         </outSequence>
         <faultSequence/>
     </resource>
-    <resource methods="GET" url-mapping="/getreservations/{username}">
+    <resource methods="GET" uri-template="/getreservations/{username}">
         <inSequence>
             <log>
                 <property name="message" value="get reservations by user"/>
