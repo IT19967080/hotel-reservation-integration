@@ -56,7 +56,7 @@
         </outSequence>
         <faultSequence/>
     </resource>
-    <resource methods="GET" uri-template="traveller/info/{username}">
+    <resource methods="GET" uri-template="/traveller/info/{username}">
         <inSequence>
             <log>
                 <property name="message" value="return traveller username"/>
